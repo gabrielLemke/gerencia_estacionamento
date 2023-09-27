@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Reserva de Vagas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="../home/home.html" class="home-button">Home</a>
+        <h1>Cadastro de Reserva de Vagas</h1>
+    </div>
+
+    <div class="content">
+        <form id="reservation-form">
+            <label for="placa">Placa do Veículo:</label>
+            <input type="text" id="placa-input" placeholder="Insira a placa (ex: GTX-1020)" oninput="formatarPlaca(this)" required>
+
+            <label for="proprietario">Nome do Proprietário:</label>
+            <input type="text" id="proprietario" placeholder="Insira o nome do Proprietário" required><br>
+
+            <label for="apartamento">Número do Apartamento:</label>
+            <input type="text" id="apartamento" placeholder="Insira o numero do apartamento" required><br>
+
+            <label for="bloco">Bloco do Apartamento:</label>
+            <input type="text" id="bloco" placeholder="Insira o bloco do apartamento" required><br>
+
+            <label for="modelo">Modelo do Veículo:</label>
+            <input type="text" id="modelo" placeholder="Insira o modelo do veículo" required><br>
+
+            <label for="cor">Cor do Veículo:</label>
+            <input type="text" id="cor" placeholder="Insira a cor do veículo" required><br>
+
+            <label for="vaga">Número da Vaga de Estacionamento:</label>
+            <input type="text" id="vaga" placeholder="Insira o numero da vaga" required><br>
+
+            <button type="submit" onclick="validarFormulario()">Salvar Reserva</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
